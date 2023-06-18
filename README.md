@@ -8,6 +8,38 @@
 composer require thuraaung2493/space-file-storage@dev
 ```
 
+## Configuration
+
+Copy the following config to `config/filesystems.php` file and
+
+```php
+  'space' => [
+    'driver' => 's3',
+    'key' => env('SPACE_ACCESS_KEY_ID'),
+    'secret' => env('SPACE_SECRET_ACCESS_KEY'),
+    'region' => env('SPACE_DEFAULT_REGION'),
+    'bucket' => env('SPACE_BUCKET'),
+    'cdn_endpoint' => env('SPACE_CDN_ENDPOINT'),
+    'folder' => env('SPACE_FOLDER'),
+    'url' => env('SPACE_URL'),
+    'endpoint' => env('SPACE_ENDPOINT'),
+    'use_path_style_endpoint' => env('SPACE_USE_PATH_STYLE_ENDPOINT', false),
+    'throw' => true,
+  ],
+```
+
+add these env variables to `.env` file.
+
+```env
+SPACE_ACCESS_KEY_ID=
+SPACE_SECRET_ACCESS_KEY=
+SPACE_DEFAULT_REGION=
+SPACE_BUCKET=
+SPACE_CDN_ENDPOINT=
+SPACE_ENDPOINT=
+SPACE_USE_PATH_STYLE_ENDPOINT=
+```
+
 ## Usage
 
 ```php
