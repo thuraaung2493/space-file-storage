@@ -21,6 +21,16 @@
       "Thuraaung\\SpaceStorage\\Tests\\": "tests/"
     }
   },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Thuraaung\\SpaceStorage\\PackageServiceProvider"
+      ],
+      "aliases": [
+        "Thuraaung\\SpaceStorage\\Facades\\SpaceStorage"
+      ]
+    }
+  },
   "require": {
     "php": "^8.2",
     "league/flysystem-aws-s3-v3": "^3.15",
