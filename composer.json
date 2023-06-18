@@ -1,6 +1,6 @@
 {
-  "name": "thuraaung2493/package-name",
-  "description": "Package description.",
+  "name": "thuraaung2493/space-file-storage",
+  "description": "A package that wraps the Laravel file storage API for DigitalOcean's space storage.",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -13,17 +13,19 @@
   ],
   "autoload": {
     "psr-4": {
-      "Thuraaung\\Namespace\\": "src/"
+      "Thuraaung\\SpaceStorage\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Thuraaung\\Namespace\\Tests\\": "tests/"
+      "Thuraaung\\SpaceStorage\\Tests\\": "tests/"
     }
   },
   "require": {
     "php": "^8.2",
-    "nunomaduro/mock-final-classes": "^1.2"
+    "league/flysystem-aws-s3-v3": "^3.15",
+    "nunomaduro/mock-final-classes": "^1.2",
+    "thuraaung2493/laravel-api-helpers": "dev-main"
   },
   "require-dev": {
     "laravel/pint": "^1.10",
