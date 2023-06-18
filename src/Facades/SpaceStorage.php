@@ -6,6 +6,7 @@ namespace Thuraaung\SpaceStorage\Facades;
 
 use Illuminate\Http\Client\Response;
 use Illuminate\Http\Response as HttpResponse;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Facade;
 use Thuraaung\SpaceStorage\SpaceStorage as BaseSpaceStorage;
 
