@@ -14,7 +14,7 @@ jobs:
         php: [8.2]
         dependency-version: [prefer-stable]
 
-    name: PHP ${{ matrix.php }} - ${{ matrix.dependency-version }}
+    name: Pest Test
 
     steps:
       - name: Checkout Code
